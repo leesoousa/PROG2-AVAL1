@@ -11,6 +11,14 @@ class Genotype {
       throw Exception('Genotype invalid');
     }
   }
+  @override
+  String toString() {
+    if (_genotype.isNotEmpty) {
+      return _genotype;
+    } else {
+      return _genotype.toString();
+    }
+  }
 
   String get bloodType {
     if (_genotype == 'AA' || _genotype == 'Ai') {
